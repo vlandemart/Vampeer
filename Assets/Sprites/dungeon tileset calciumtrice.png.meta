@@ -721,10 +721,10 @@ TextureImporter:
     second: dungeon tileset calciumtrice_507
   - first:
       213: 2271397842350158729
-    second: dungeon tileset calciumtrice_508
+    second: shadow2
   - first:
       213: 613694242437439553
-    second: dungeon tileset calciumtrice_509
+    second: shadow1
   - first:
       213: 623749406598732290
     second: dungeon tileset calciumtrice_510
@@ -863,6 +863,9 @@ TextureImporter:
   - first:
       213: -1775875221550669181
     second: dungeon tileset calciumtrice_1
+  - first:
+      213: -4398911679680617155
+    second: dummy
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -5649,7 +5652,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon tileset calciumtrice_508
+      name: shadow2
       rect:
         serializedVersion: 2
         x: 0
@@ -5670,7 +5673,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon tileset calciumtrice_509
+      name: shadow1
       rect:
         serializedVersion: 2
         x: 16
@@ -5896,6 +5899,27 @@ TextureImporter:
       bones: []
       spriteID: 695329f1d61616f0982489798b976a1e
       internalID: -1775875221550669181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dummy
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 224
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a124b34e31070251b410394e4a3376f
+      internalID: -4398911679680617155
       vertices: []
       indices: 
       edges: []

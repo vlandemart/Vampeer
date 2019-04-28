@@ -2,6 +2,9 @@
 
 public class LivingEntity : MonoBehaviour, IDamagable
 {
+	[SerializeField]
+	protected float startingHealth = 3f;
+
 	public bool Dead
 	{
 		get;
@@ -12,6 +15,11 @@ public class LivingEntity : MonoBehaviour, IDamagable
 	{
 		get;
 		protected set;
+	}
+
+	protected virtual void Start()
+	{
+		Health = startingHealth;
 	}
 
 	public virtual void TakeDamage(float damage, LivingEntity attacker)

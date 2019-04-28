@@ -11,7 +11,8 @@ public class Weapon : MonoBehaviour
 
 	private bool attacking = false;
 	private float currentCooldown = 0f;
-	private LivingEntity player;
+	[SerializeField]
+	private LivingEntity owner;
 	[SerializeField]
 	private Animator hitAnimation;
 	[SerializeField]
@@ -20,6 +21,8 @@ public class Weapon : MonoBehaviour
 	void Start()
 	{
 		currentCooldown = attackCooldown;
+		if (owner == null)
+			Debug.LogError(gameObject.name + " doesn't have owner.");
 	}
 
 	void Update()
@@ -81,6 +84,6 @@ public class Weapon : MonoBehaviour
 
 	public void DealDamage(LivingEntity target)
 	{
-		target.TakeDamage(damage, player);
+		target.TakeDamage(damage, owner);
 	}
 }

@@ -2,17 +2,15 @@
 
 public class Enemy : LivingEntity
 {
-	[SerializeField]
-	private float startingHealth = 3f;
-
-	private void Start()
+	public override void TakeDamage(float damage, LivingEntity attacker)
 	{
-		Health = startingHealth;
+		base.TakeDamage(damage, attacker);
+		Debug.Log(gameObject.name + " was attacked by " + attacker.name + " for " + damage + " damage.");
 	}
 
 	public override void Die(LivingEntity killer)
 	{
 		base.Die(killer);
-		Debug.Log(gameObject.name + " is dead.");
+		Debug.Log(gameObject.name + " was killed by " + killer.name + ".");
 	}
 }
