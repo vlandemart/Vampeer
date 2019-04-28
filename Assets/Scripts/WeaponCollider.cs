@@ -9,6 +9,7 @@ public class WeaponCollider : MonoBehaviour
 	void Start()
 	{
 		col = GetComponent<BoxCollider2D>();
+		SetCollider(false);
 	}
 
 	public void SetCollider(bool enabled)
